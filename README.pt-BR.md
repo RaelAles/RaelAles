@@ -1,4 +1,4 @@
-<p align="right"><a href="https://raelales.com/apoiar" title="Apoie o projeto Rael Ales"><img src=".github/assets/support-pt.svg" alt="Apoie-me — ajude a manter os projetos Rael Ales gratuitos e atualizados"></a></p>
+<p align="right"><a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img src=".github/assets/support-pt.svg" alt="Apoie-me — ajude a manter os projetos Rael Ales gratuitos e atualizados"></a></p>
 
 <!-- Idioma: Português (Brasil) · [English](README.md) -->
 
