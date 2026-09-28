@@ -1,12 +1,10 @@
-<p align="right"><a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a></p>
+🇺🇸 **English** · 🇧🇷 [Português (Brasil)](README.pt-BR.md) <a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img align="right" src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a>
 
 <!-- Language: English · [Português (Brasil)](README.pt-BR.md) -->
 
 # Rael Ales
 
 **Author and developer.** I build software and digital projects, and I write books, texts, e-books and articles.
-
-🇺🇸 **English** · 🇧🇷 [Português (Brasil)](README.pt-BR.md)
 
 ---
 
