@@ -20,7 +20,7 @@ Since then I have not chosen one field to call my own, and I never complained ab
 
 Whether the idea solves a problem or just wants to become a story, it makes no difference to me. I create it and make it real.
 
-## What I work with
+## Technologies
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)

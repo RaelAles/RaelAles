@@ -20,7 +20,7 @@ De lá pra cá eu não escolhi uma área pra chamar de minha, e nunca reclamei d
 
 Se a ideia resolve problema ou só quer virar história, para mim é indiferente. Eu crio e torno real.
 
-## Com o que eu trabalho
+## Tecnologias
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
