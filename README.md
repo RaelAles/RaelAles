@@ -1,4 +1,4 @@
-🇺🇸 **English** · 🇧🇷 [Português (Brasil)](README.pt-BR.md) <a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img align="right" src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a>
+🇺🇸 **EN** · 🇧🇷 [PT-BR](README.pt-BR.md) <a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img align="right" src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a>
 
 <!-- Language: English · [Português (Brasil)](README.pt-BR.md) -->
 
