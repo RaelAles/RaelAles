@@ -4,7 +4,7 @@
 
 # Rael Ales
 
-**Author and developer.** I build software and digital projects, and I write books, texts, e-books and articles.
+**Author and developer.** I build digital solutions and software, and I write books, texts, e-books and articles.
 
 **EN** · [PT](README.pt-BR.md)
 

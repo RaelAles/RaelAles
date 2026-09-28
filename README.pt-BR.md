@@ -4,7 +4,7 @@
 
 # Rael Ales
 
-**Autor e desenvolvedor.** Faço software e projetos digitais, e escrevo livros, textos, e-books e artigos.
+**Autor e desenvolvedor.** Crio soluções digitais e software, e escrevo livros, textos, e-books e artigos.
 
 **PT** · [EN](README.md)
 
