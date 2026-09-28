@@ -5,10 +5,15 @@ repositorios do dono da conta.
 Roda no GitHub Actions. Exige o secret TECH_TOKEN (Personal Access Token com
 escopo para ler os repositorios). Le apenas o trecho entre <!-- TECH:START -->
 e <!-- TECH:END --> e o reescreve; o resto do README nao e tocado.
+
+Cada selo recebe uma cor aleatoria propria; nenhuma cor se repete entre as
+tecnologias exibidas. Nenhum selo exibe icone/logo.
 """
 
+import colorsys
 import json
 import os
+import random
 import re
 import sys
 import urllib.error
@@ -24,60 +29,6 @@ IGNORAR = {
     for nome in os.environ.get("IGNORAR_REPOS", "").split(",")
     if nome.strip()
 }
-
-# nome da linguagem -> (cor sem '#', slug do logo em simple-icons)
-LINGUAGENS = {
-    "JavaScript": ("F7DF1E", "javascript"),
-    "TypeScript": ("3178C6", "typescript"),
-    "Python": ("3572A5", "python"),
-    "HTML": ("E34F26", "html5"),
-    "CSS": ("1572B6", "css3"),
-    "SCSS": ("C6538C", "sass"),
-    "Shell": ("89E051", "gnubash"),
-    "Bash": ("89E051", "gnubash"),
-    "PowerShell": ("012456", "powershell"),
-    "Lua": ("000080", "lua"),
-    "Go": ("00ADD8", "go"),
-    "Rust": ("DEA584", "rust"),
-    "Java": ("B07219", "openjdk"),
-    "C": ("555555", "c"),
-    "C++": ("F34B7D", "cplusplus"),
-    "C#": ("178600", "csharp"),
-    "PHP": ("4F5D95", "php"),
-    "Ruby": ("701516", "ruby"),
-    "Kotlin": ("A97BFF", "kotlin"),
-    "Swift": ("F05138", "swift"),
-    "Dart": ("00B4AB", "dart"),
-    "R": ("198CE7", "r"),
-    "Scala": ("C22D40", "scala"),
-    "Elixir": ("6E4A7E", "elixir"),
-    "Haskell": ("5E5086", "haskell"),
-    "Perl": ("0298C3", "perl"),
-    "Vue": ("41B883", "vuedotjs"),
-    "Svelte": ("FF3E00", "svelte"),
-    "Astro": ("FF5A03", "astro"),
-    "Dockerfile": ("384D54", "docker"),
-    "Makefile": ("427819", ""),
-    "Zig": ("EC915C", "zig"),
-    "Nix": ("7E7EFF", "nixos"),
-    "Clojure": ("DB5855", "clojure"),
-    "Erlang": ("B83998", "erlang"),
-    "Julia": ("A270BA", "julia"),
-    "OCaml": ("3BE133", "ocaml"),
-    "GDScript": ("355570", "godotengine"),
-    "Solidity": ("AA6746", "solidity"),
-    "Vim Script": ("199F4B", "vim"),
-    "TeX": ("3D6117", "latex"),
-    "Jupyter Notebook": ("DA5B0B", "jupyter"),
-    "Markdown": ("083FA1", "markdown"),
-    "CMake": ("DA3434", "cmake"),
-    "Groovy": ("4298B8", "apachegroovy"),
-    "Assembly": ("6E4C13", ""),
-    "Batchfile": ("C1F12E", ""),
-    "Objective-C": ("438EFF", ""),
-}
-
-COR_PADRAO = ("555555", "")
 
 
 def api(caminho):
@@ -117,13 +68,35 @@ def somar_linguagens(repos):
     return total
 
 
-def luminancia(hexadecimal):
-    def canal(valor):
-        valor = int(valor, 16) / 255
-        return valor / 12.92 if valor <= 0.03928 else ((valor + 0.055) / 1.055) ** 2.4
+def hsl_para_hex(matiz, saturacao, luz):
+    vermelho, verde, azul = colorsys.hls_to_rgb(matiz / 360, luz, saturacao)
+    return f"{round(vermelho * 255):02X}{round(verde * 255):02X}{round(azul * 255):02X}"
 
-    r, g, b = (canal(hexadecimal[i : i + 2]) for i in (0, 2, 4))
-    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+def gerar_cores(quantidade):
+    """Cores aleatorias, uma por tecnologia, todas diferentes.
+
+    As matizes ficam em faixas separadas (para nao sairem parecidas) e a
+    luminosidade fica baixa o bastante para o texto branco do selo ser legivel.
+    """
+    if quantidade <= 0:
+        return []
+    passo = 360.0 / quantidade
+    deslocamento = random.uniform(0, 360)
+    cores, usadas = [], set()
+    for indice in range(quantidade):
+        inicio = deslocamento + indice * passo
+        for _ in range(50):
+            cor = hsl_para_hex(
+                (inicio + random.uniform(0, passo * 0.5)) % 360,
+                random.uniform(0.45, 0.75),
+                random.uniform(0.28, 0.42),
+            )
+            if cor not in usadas:
+                break
+        usadas.add(cor)
+        cores.append(cor)
+    return cores
 
 
 def rotulo_shields(nome):
@@ -136,20 +109,16 @@ def rotulo_shields(nome):
     )
 
 
-def montar_badge(nome):
-    cor, logo = LINGUAGENS.get(nome, COR_PADRAO)
-    cor = cor.lstrip("#").upper()
-    cor_logo = "black" if luminancia(cor) > 0.5 else "white"
+def montar_badge(nome, cor):
     url = f"https://img.shields.io/badge/{rotulo_shields(nome)}-{cor}?style=for-the-badge"
-    if logo:
-        url += f"&logo={logo}&logoColor={cor_logo}"
     return f"![{nome}]({url})"
 
 
 def montar_bloco(total):
     ranking = sorted(total.items(), key=lambda item: item[1], reverse=True)[:MAX]
+    cores = gerar_cores(len(ranking))
     linhas = ["<!-- TECH:START -->"]
-    linhas += [montar_badge(nome) for nome, _ in ranking]
+    linhas += [montar_badge(nome, cor) for (nome, _), cor in zip(ranking, cores)]
     linhas += ["<!-- TECH:END -->"]
     return "\n".join(linhas)
 
