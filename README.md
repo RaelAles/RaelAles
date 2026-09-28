@@ -30,6 +30,4 @@ Whether the idea solves a problem or just wants to become a story, it makes no d
 
 I write books, e-books, articles and texts. Much of what I published came out without my name — including the one that stood out most, which has a Latin title: *Vox perit, scripta supersunt*, the voice perishes, the writings remain.
 
-## Contact
-
-- **Website:** [raelales.com](https://raelales.com)
+<p align="right"><a href="https://raelales.com">raelales.com</a></p>

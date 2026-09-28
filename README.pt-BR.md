@@ -30,6 +30,4 @@ Se a ideia resolve problema ou só quer virar história, para mim é indiferente
 
 Escrevo livros, e-books, artigos e textos. Boa parte do que publiquei saiu sem meu nome — incluindo o que mais marcou, que tem título em latim: *Vox perit, scripta supersunt*, a voz perece, os escritos permanecem.
 
-## Contato
-
-- **Site:** [raelales.com](https://raelales.com)
+<p align="right"><a href="https://raelales.com">raelales.com</a></p>
