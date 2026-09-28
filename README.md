@@ -28,14 +28,6 @@ Whether the idea solves a problem or just wants to become a story, it makes no d
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## 📌 Featured projects
-
-| Project | Description | Stack |
-| --- | --- | --- |
-| **[Portfolio](https://raelales.com)** | My personal website: a single static page in 21 languages, light/dark theme, animated WebGL background, JSON-driven content and a hidden detail for those who explore. | JavaScript |
-| **FineKo** | Three KOReader plugins to fetch and merge metadata and covers by ISBN from free sources, show a random quote from your books, and draw title and progress badge over each cover. | Lua |
-| **[ADGourmet](https://adgourmet.pages.dev)** | Inventory and sales management system. | HTML |
-
 ## ✍️ Writing
 
 I write books, e-books, articles and texts. Much of what I published came out without my name — including the one that stood out most, which has a Latin title: *Vox perit, scripta supersunt*, the voice perishes, the writings remain.
@@ -43,8 +35,3 @@ I write books, e-books, articles and texts. Much of what I published came out wi
 ## 📫 Contact
 
 - **Website:** [raelales.com](https://raelales.com)
-- **Contact form:** [raelales.com/#contato](https://raelales.com/#contato)
-
----
-
-![Rael Ales's GitHub stats](https://github-readme-stats.vercel.app/api?username=raelales&show_icons=true&hide_border=true&theme=transparent)

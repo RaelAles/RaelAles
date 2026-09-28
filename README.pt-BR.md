@@ -28,14 +28,6 @@ Se a ideia resolve problema ou só quer virar história, para mim é indiferente
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## 📌 Projetos em destaque
-
-| Projeto | Descrição | Stack |
-| --- | --- | --- |
-| **[Portfolio](https://raelales.com)** | Meu site pessoal: página única estática em 21 idiomas, tema claro/escuro, fundo animado em WebGL, conteúdo em JSON e um detalhe escondido para quem explorar. | JavaScript |
-| **FineKo** | Três plugins para o KOReader para buscar e mesclar metadados e capas por ISBN em fontes gratuitas, mostrar uma citação aleatória dos seus livros e desenhar título e selo de progresso sobre cada capa. | Lua |
-| **[ADGourmet](https://adgourmet.pages.dev)** | Sistema de gerenciamento de estoque e vendas. | HTML |
-
 ## ✍️ Escrita
 
 Escrevo livros, e-books, artigos e textos. Boa parte do que publiquei saiu sem meu nome — incluindo o que mais marcou, que tem título em latim: *Vox perit, scripta supersunt*, a voz perece, os escritos permanecem.
@@ -43,8 +35,3 @@ Escrevo livros, e-books, artigos e textos. Boa parte do que publiquei saiu sem m
 ## 📫 Contato
 
 - **Site:** [raelales.com](https://raelales.com)
-- **Formulário de contato:** [raelales.com/#contato](https://raelales.com/#contato)
-
----
-
-![Estatísticas do GitHub de Rael Ales](https://github-readme-stats.vercel.app/api?username=raelales&show_icons=true&hide_border=true&theme=transparent)
