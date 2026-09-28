@@ -1,4 +1,4 @@
-🇧🇷 **PT** · 🇺🇸 [EN](README.md) <a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img align="right" src=".github/assets/support-pt.svg" alt="Apoie-me — ajude a manter os projetos Rael Ales gratuitos e atualizados"></a>
+<p align="right"><a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img src=".github/assets/support-pt.svg" alt="Apoie-me — ajude a manter os projetos Rael Ales gratuitos e atualizados"></a></p>
 
 <!-- Idioma: Português (Brasil) · [English](README.md) -->
 
@@ -6,9 +6,11 @@
 
 **Autor e desenvolvedor.** Faço software e projetos digitais, e escrevo livros, textos, e-books e artigos.
 
+**PT** · [EN](README.md)
+
 ---
 
-## 👋 Sobre mim
+## Sobre mim
 
 Escrevi meu primeiro software em 2010, uma ferramenta de controle, rastreamento e orientação feita pra resolver um problema meu no trabalho — e nunca foi minha função lá. Só que ela pegou, escalou, e hoje tem seção que usa.
 
@@ -18,7 +20,7 @@ De lá pra cá eu não escolhi uma área pra chamar de minha, e nunca reclamei d
 
 Se a ideia resolve problema ou só quer virar história, para mim é indiferente. Eu crio e torno real.
 
-## 🛠️ Com o que eu trabalho
+## Com o que eu trabalho
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -26,10 +28,10 @@ Se a ideia resolve problema ou só quer virar história, para mim é indiferente
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## ✍️ Escrita
+## Escrita
 
 Escrevo livros, e-books, artigos e textos. Boa parte do que publiquei saiu sem meu nome — incluindo o que mais marcou, que tem título em latim: *Vox perit, scripta supersunt*, a voz perece, os escritos permanecem.
 
-## 📫 Contato
+## Contato
 
 - **Site:** [raelales.com](https://raelales.com)
