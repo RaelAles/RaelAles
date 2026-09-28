@@ -1,3 +1,5 @@
+<p align="right"><a href="https://raelales.com/apoiar" title="Support the Rael Ales project"><img src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a></p>
+
 <!-- Language: English · [Português (Brasil)](README.pt-BR.md) -->
 
 # Rael Ales
