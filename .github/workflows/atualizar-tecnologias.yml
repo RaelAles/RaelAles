@@ -1,8 +1,9 @@
 name: Atualizar tecnologias
 
 on:
-  schedule:
-    - cron: "0 6 * * *"
+  # Disparado pelo workflow "Atualizar projetos" do repositorio Portfolio.
+  repository_dispatch:
+    types: [atualizar-tecnologias]
   workflow_dispatch:
   push:
     paths:

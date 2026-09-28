@@ -6,14 +6,15 @@ Roda no GitHub Actions. Exige o secret TECH_TOKEN (Personal Access Token com
 escopo para ler os repositorios). Le apenas o trecho entre <!-- TECH:START -->
 e <!-- TECH:END --> e o reescreve; o resto do README nao e tocado.
 
-Cada selo recebe uma cor aleatoria propria; nenhuma cor se repete entre as
+Cada tecnologia recebe uma cor pseudoaleatoria derivada do proprio nome: fica
+sempre a mesma enquanto fizer parte da lista, e nenhuma cor se repete entre as
 tecnologias exibidas. Nenhum selo exibe icone/logo.
 """
 
 import colorsys
+import hashlib
 import json
 import os
-import random
 import re
 import sys
 import urllib.error
@@ -29,6 +30,11 @@ IGNORAR = {
     for nome in os.environ.get("IGNORAR_REPOS", "").split(",")
     if nome.strip()
 }
+
+# Distancia minima (em graus) entre as matizes exibidas, para nao sairem
+# parecidas. Com no maximo 8 selos, sobra espaco de sobra no circulo.
+SEPARACAO_MINIMA = 22.0
+ANGULO_AUREO = 137.5
 
 
 def api(caminho):
@@ -73,30 +79,29 @@ def hsl_para_hex(matiz, saturacao, luz):
     return f"{round(vermelho * 255):02X}{round(verde * 255):02X}{round(azul * 255):02X}"
 
 
-def gerar_cores(quantidade):
-    """Cores aleatorias, uma por tecnologia, todas diferentes.
+def distancia_matiz(a, b):
+    bruta = abs(a - b) % 360
+    return min(bruta, 360 - bruta)
 
-    As matizes ficam em faixas separadas (para nao sairem parecidas) e a
-    luminosidade fica baixa o bastante para o texto branco do selo ser legivel.
-    """
-    if quantidade <= 0:
-        return []
-    passo = 360.0 / quantidade
-    deslocamento = random.uniform(0, 360)
-    cores, usadas = [], set()
-    for indice in range(quantidade):
-        inicio = deslocamento + indice * passo
-        for _ in range(50):
-            cor = hsl_para_hex(
-                (inicio + random.uniform(0, passo * 0.5)) % 360,
-                random.uniform(0.45, 0.75),
-                random.uniform(0.28, 0.42),
-            )
-            if cor not in usadas:
-                break
-        usadas.add(cor)
-        cores.append(cor)
-    return cores
+
+def cor_da_tecnologia(nome, matizes_usadas):
+    """Cor estavel por nome: deriva matiz/saturacao/luz de um hash do nome e
+    afasta a matiz das ja usadas (de forma deterministica) ate nao repetir."""
+    valor = int.from_bytes(
+        hashlib.sha256(f"tecnologias:{nome}".encode("utf-8")).digest()[:8], "big"
+    )
+    matiz = (valor % 360000) / 1000.0
+    saturacao = 0.45 + ((valor >> 20) % 31) / 100.0
+    luz = 0.28 + ((valor >> 30) % 15) / 100.0
+    for _ in range(40):
+        if all(
+            distancia_matiz(matiz, usada) >= SEPARACAO_MINIMA
+            for usada in matizes_usadas
+        ):
+            break
+        matiz = (matiz + ANGULO_AUREO) % 360
+    matizes_usadas.append(matiz)
+    return hsl_para_hex(matiz, saturacao, luz)
 
 
 def rotulo_shields(nome):
@@ -116,9 +121,13 @@ def montar_badge(nome, cor):
 
 def montar_bloco(total):
     ranking = sorted(total.items(), key=lambda item: item[1], reverse=True)[:MAX]
-    cores = gerar_cores(len(ranking))
+    nomes = [nome for nome, _ in ranking]
+    # A cor e atribuida na ordem alfabetica, e nao na ordem de uso, para que
+    # mudar o ranking (bytes) nao troque a cor de quem ja estava na lista.
+    matizes_usadas = []
+    cores = {nome: cor_da_tecnologia(nome, matizes_usadas) for nome in sorted(nomes)}
     linhas = ["<!-- TECH:START -->"]
-    linhas += [montar_badge(nome, cor) for (nome, _), cor in zip(ranking, cores)]
+    linhas += [montar_badge(nome, cores[nome]) for nome in nomes]
     linhas += ["<!-- TECH:END -->"]
     return "\n".join(linhas)
 
