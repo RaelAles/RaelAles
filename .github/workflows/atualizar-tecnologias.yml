@@ -1,0 +1,39 @@
+name: Atualizar tecnologias
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/atualizar-tecnologias.py"
+      - ".github/workflows/atualizar-tecnologias.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositorio
+        uses: actions/checkout@v4
+
+      - name: Atualizar os READMEs
+        env:
+          TECH_TOKEN: ${{ secrets.TECH_TOKEN }}
+          MAX_LINGUAGENS: "8"
+          IGNORAR_REPOS: ${{ vars.IGNORAR_REPOS }}
+        run: python3 scripts/atualizar-tecnologias.py
+
+      - name: Enviar as mudancas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "Sem mudancas."
+          else
+            git add README.md README.pt-BR.md
+            git commit -m "chore: atualiza as tecnologias dos READMEs"
+            git push
+          fi
