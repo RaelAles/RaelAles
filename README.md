@@ -2,10 +2,6 @@
 
 <!-- Language: English · [Português (Brasil)](README.pt-BR.md) -->
 
-# Rael Ales
-
-**Author and developer.** I build digital solutions and software, and I write books, texts, e-books and articles.
-
 **EN** · [PT](README.pt-BR.md)
 
 ---

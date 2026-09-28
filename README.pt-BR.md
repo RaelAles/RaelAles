@@ -2,10 +2,6 @@
 
 <!-- Idioma: Português (Brasil) · [English](README.md) -->
 
-# Rael Ales
-
-**Autor e desenvolvedor.** Crio soluções digitais e software, e escrevo livros, textos, e-books e artigos.
-
 **PT** · [EN](README.md)
 
 ---
