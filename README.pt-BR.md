@@ -1,10 +1,10 @@
 <p align="right"><a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img src=".github/assets/support-pt.svg" alt="Apoie-me — ajude a manter os projetos Rael Ales gratuitos e atualizados"></a></p>
 
-<!-- Idioma: Português (Brasil) · [English](README.md) -->
+# Sobre
 
 **PT** · [EN](README.md)
 
----
+<!-- Idioma: Português (Brasil) · [English](README.md) -->
 
 <p align="justify">Escrevi meu primeiro software em 2010, uma ferramenta de controle, rastreamento e orientação feita pra resolver um problema meu no trabalho, e nunca foi minha função lá. Nunca foi. Só que ela pegou, escalou, e hoje tem seção que usa.</p>
 
