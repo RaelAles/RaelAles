@@ -1,8 +1,8 @@
+<p align="right"><sub><b>PT</b> · <a href="README.md">EN</a></sub></p>
+
 <p align="right"><a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img src=".github/assets/support-pt.svg" alt="Apoie-me — ajude a manter os projetos Rael Ales gratuitos e atualizados"></a></p>
 
 # Sobre
-
-**PT** · [EN](README.md)
 
 <!-- Idioma: Português (Brasil) · [English](README.md) -->
 
