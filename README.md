@@ -6,15 +6,19 @@
 
 ---
 
-## About me
+<p align="justify">I wrote my first software in 2010, a control, tracking and guidance tool made to solve a problem I had at work, and it was never my job there. Never was. But it caught on, it scaled, and today there is a department that uses it.</p>
 
-I wrote my first software in 2010, a control, tracking and guidance tool made to solve a problem I had at work — and it was never my job there. It never was. But it caught on, it scaled, and today there is a department that uses it.
+<p align="justify">What I made for myself turned into other people's requests, almost always a simple problem to solve or a tool to make someone's work easier. I solve it. I deliver. And what is missing in that kind of exchange is never money: it is the value of what was done.</p>
 
-What I made for myself turned into other people's requests, almost always a simple problem to solve or a tool to make someone's work easier. I solve it. I deliver. And what is missing in that kind of exchange is never money: it's the value of what was done.
+<p align="justify">Writing came along with it, and much of what I published came out without my name, including the one that stood out most, which has a Latin title:</p>
 
-Since then I have not chosen one field to call my own, and I never complained about it. I make software, design digital things, write books and texts, and tinker with new technology when it appears. Behind it all there is just one thing: taking an idea and seeing how far it goes.
+<p align="center"><strong><em>Vox perit, scripta supersunt</em></strong></p>
 
-Whether the idea solves a problem or just wants to become a story, it makes no difference to me. I create it and make it real.
+<p align="center"><em>the voice perishes, the writings remain</em></p>
+
+<p align="justify">Since then I have not chosen one field to call my own, and I never complained about it. I make software, design digital things, write books and texts, tinker with new technology when it appears, and behind it all there is just one thing. Taking an idea and seeing how far it goes.</p>
+
+<p align="justify">Whether the idea solves a problem or just wants to become a story, it makes no difference to me. I create it and make it real.</p>
 
 ## Technologies
 
@@ -26,9 +30,3 @@ Whether the idea solves a problem or just wants to become a story, it makes no d
 ![Python](https://img.shields.io/badge/Python-539C3A?style=for-the-badge)
 ![CSS](https://img.shields.io/badge/CSS-248A82?style=for-the-badge)
 <!-- TECH:END -->
-
-## Writing
-
-I write books, e-books, articles and texts. Much of what I published came out without my name — including the one that stood out most, which has a Latin title: *Vox perit, scripta supersunt*, the voice perishes, the writings remain.
-
-<p align="right"><a href="https://raelales.com">raelales.com</a></p>
