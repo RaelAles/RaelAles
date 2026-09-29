@@ -6,6 +6,8 @@
 
 ---
 
+## Sobre
+
 <p align="justify">Escrevi meu primeiro software em 2010, uma ferramenta de controle, rastreamento e orientação feita pra resolver um problema meu no trabalho, e nunca foi minha função lá. Nunca foi. Só que ela pegou, escalou, e hoje tem seção que usa.</p>
 
 <p align="justify">O que eu fiz pra mim virou pedido dos outros, quase sempre um problema simples de resolver ou uma ferramenta pra facilitar o trabalho de alguém. Eu resolvo. Entrego. E o que falta nesse tipo de troca nunca é dinheiro: é o valor do que foi feito.</p>
