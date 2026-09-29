@@ -8,9 +8,9 @@
 
 ## About me
 
-I wrote my first software in 2010, a control, tracking and guidance tool made to solve a problem I had at work — and it was never my job there. But it caught on, it scaled, and today there is a department that uses it.
+I wrote my first software in 2010, a control, tracking and guidance tool made to solve a problem I had at work — and it was never my job there. It never was. But it caught on, it scaled, and today there is a department that uses it.
 
-What I made for myself turned into other people's requests, almost always a simple problem to solve or a tool to make someone's work easier. I solve it. I deliver.
+What I made for myself turned into other people's requests, almost always a simple problem to solve or a tool to make someone's work easier. I solve it. I deliver. And what is missing in that kind of exchange is never money: it's the value of what was done.
 
 Since then I have not chosen one field to call my own, and I never complained about it. I make software, design digital things, write books and texts, and tinker with new technology when it appears. Behind it all there is just one thing: taking an idea and seeing how far it goes.
 

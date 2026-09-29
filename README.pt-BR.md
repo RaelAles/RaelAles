@@ -8,9 +8,9 @@
 
 ## Sobre mim
 
-Escrevi meu primeiro software em 2010, uma ferramenta de controle, rastreamento e orientação feita pra resolver um problema meu no trabalho — e nunca foi minha função lá. Só que ela pegou, escalou, e hoje tem seção que usa.
+Escrevi meu primeiro software em 2010, uma ferramenta de controle, rastreamento e orientação feita pra resolver um problema meu no trabalho — e nunca foi minha função lá. Nunca foi. Só que ela pegou, escalou, e hoje tem seção que usa.
 
-O que eu fiz pra mim virou pedido dos outros, quase sempre um problema simples de resolver ou uma ferramenta pra facilitar o trabalho de alguém. Eu resolvo. Entrego.
+O que eu fiz pra mim virou pedido dos outros, quase sempre um problema simples de resolver ou uma ferramenta pra facilitar o trabalho de alguém. Eu resolvo. Entrego. E o que falta nesse tipo de troca nunca é dinheiro: é o valor do que foi feito.
 
 De lá pra cá eu não escolhi uma área pra chamar de minha, e nunca reclamei disso. Faço software, projeto digital, escrevo livros e textos, mexo com tecnologia nova quando ela aparece. E por trás de tudo tem uma coisa só: pegar uma ideia e ver até onde ela vai.
 
