@@ -1,7 +1,7 @@
 <!-- noport -->
 <p align="left"><sub><b>EN</b> · <a href="README.pt-BR.md">PT</a></sub></p>
 
-<p align="right"><a href="https://raelales.com/apoiar" title="Apoie Rael Ales e seus projetos"><img src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a></p>
+<p align="right"><a href="https://raelales.com/apoiar" title="Support Rael Ales and his projects"><img src=".github/assets/support-en.svg" alt="Support me — help keep the Rael Ales projects free and up to date"></a></p>
 
 # About
 
