@@ -7,19 +7,23 @@
 
 <!-- Language: English · [Português (Brasil)](README.pt-BR.md) -->
 
-<p align="justify">I wrote my first software in 2010, a control, tracking and guidance tool made to solve a problem I had at work, and it was never my job there. Never was. But it caught on, it scaled, and today there is a department that uses it.</p>
+<p align="justify">Before any line of code, there is a question every person carries without realizing it: who decides the path I follow?</p>
 
-<p align="justify">What I made for myself turned into other people's requests, almost always a simple problem to solve or a tool to make someone's work easier. I solve it. I deliver. And what is missing in that kind of exchange is never money: it is the value of what was done.</p>
+<p align="justify">Maybe the answer is comfortable. Maybe it is routine, other people's expectations, habit. Maybe it is a system we learned not to question. Stop for a moment and look at the choices you made this week. How many were really yours?</p>
 
-<p align="justify">Writing came along with it, and much of what I published came out without my name, including the one that stood out most, which has a Latin title:</p>
+<p align="justify">Freedom is not a distant territory, reserved for those born on the right side of history. It begins with a small gesture: the moment someone realizes they can choose, and that each choice gradually draws who they become.</p>
 
-<p align="center"><strong><em>Vox perit, scripta supersunt</em></strong></p>
+<p align="justify">Fighting for that freedom is a continuous act. It can be physical, when the body seeks room to exist. It can be emotional, when the mind refuses to live under fear or under voices that do not belong to it. No one receives it ready-made. It is won with patience and courage, day after day.</p>
 
-<p align="center"><em>the voice perishes, the writings remain</em></p>
+<p align="justify">In the digital world, that same struggle takes a specific form. There are programs that work like closed boxes: you use them but don't understand them; you trust them but cannot verify; you depend on the will of whoever built them. And there are programs that work like open windows. Anyone can look inside, learn from what they find, change what doesn't serve them, and share the result with whoever comes next.</p>
 
-<p align="justify">Since then I have not chosen one field to call my own, and I never complained about it. I make software, design digital things, write books and texts, tinker with new technology when it appears, and behind it all there is just one thing. Taking an idea and seeing how far it goes.</p>
+<p align="justify">Free code is, to me, freedom translated into the language of machines. It is the promise that knowledge does not need to be locked away to be useful, and that the tool can serve the person who uses it, not only the person who sells it.</p>
 
-<p align="justify">Whether the idea solves a problem or just wants to become a story, it makes no difference to me. I create it and make it real.</p>
+<p align="justify">This is not a condemnation of those who build products, of those who need to make a living from their own work, or of those who believe in the value of the market. There is room for every path. I have simply chosen mine. And I invite you to look at yours with the same honesty: what you build, what you protect, what you leave free so that others can walk too.</p>
+
+<p align="justify">Every project I publish here is a small gesture in that direction. I don't see it as a product, but as a half-open door. Come in, use it, learn, disagree, improve, rebuild. If something here awakens a new question in you, the goal has already been achieved.</p>
+
+<p align="justify">Because freedom only gains meaning when it is shared.</p>
 
 ## Technologies
 
